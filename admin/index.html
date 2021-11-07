@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLEBS || Admin</title>
+    
+    <!-- bootstrap --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+
+    <!-- font-awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awasome -->
+  
+    <link rel="stylesheet" href="index.css">
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+
+</head>
+<body>
+    <div class="all-content bg-success">
+        <div class="left"> 
+            <div class="navbar1 bg-main p-2">
+                <div class="m-auto title">   
+                    <h1 class="text-white"><i class="fas fa-school"></i>  MLEBS </h1>
+                </div>
+            </div>
+            <div class="functions">
+                <div class="dashboard">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-dashboard"> <i class="fas fa-chart-bar"></i> Dashboard </button>
+                    </div>
+                    <div class="btn-class1">
+                        <button class="btn btn-same1 t-admin"> <i class="fas fa-angle-right"></i> Admin</button>
+                        <button class="btn btn-same1 t-teacher"> <i class="fas fa-angle-right"></i> Teacher</button>
+                        <button class="btn btn-same1 t-student"> <i class="fas fa-angle-right"></i> Student</button>
+                        <button class="btn btn-same1 t-parents"> <i class="fas fa-angle-right"></i> Parents </button>
+                    </div>
+                    
+                </div>
+                <div class="teacher ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-teacher"> <i class="fas fa-chalkboard-teacher"> </i> Teacher</button>
+                    </div>
+                    <div class="btn-teacherClick">
+                        <button class="btn btn-same1 btn-allTeacher"> <i class="fas fa-angle-right"></i> All Teacher</button>
+                        <button class="btn btn-same1 btn-teacherDetail"><i class="fas fa-angle-right"></i> Teacher Details</button>
+                        <button class="btn btn-same1 btn-addTeacher"> <i class="fas fa-angle-right"></i> Add Teacher</button>
+                        <button class="btn btn-same1 btn-teacherPayment"> <i class="fas fa-angle-right"></i> Teacher Payment</button>
+                    </div>
+                </div>
+                <div class="student ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-student"> <i class="fas fa-user-graduate"></i> Student</button>
+                    </div>
+                    <div class="btn-studentClick">
+                        <button class="btn btn-same1 btn-admission"> <i class="fas fa-angle-right"></i> Admission</button>
+                        <button class="btn btn-same1 btn-studentDetail"> <i class="fas fa-angle-right"></i> Student Detail</button>
+                        <button class="btn btn-same1 btn-studentPromotion"> <i class="fas fa-angle-right"></i> Student Promotion</button>
+                        <button class="btn btn-same1 btn-cancellAdmission"> <i class="fas fa-angle-right"></i> Cancell Admission</button>
+                    </div>
+                </div>
+                <div class="parents ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-parents"> <i class="fas fa-user-friends"></i> Parents </button>
+                    </div>
+                </div>
+                <div class="library ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-library"> <i class="fas fa-book"></i> Library </button>
+                    </div>
+                </div>
+                <div class="account ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-account"> <i class="fas fa-money-check-alt"></i> Account </button>
+                    </div>
+                </div>
+                <div class="class ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-classes"> <i class="fas fa-pen-nib"></i> Class </button>
+                    </div>
+                </div>
+                <div class="subject ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-subject"> <i class="fas fa-address-book"></i> Subject </button>
+                    </div>
+                </div>
+                <div class="class-routine ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-class-routine"> <i class="fas fa-calendar-alt"></i> Class Routine</button>
+                    </div>
+                </div>
+                <div class="attendance ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-attendance"> <i class="fas fa-fist-raised"></i> Attendance </button>
+                    </div>
+                </div>
+                <div class="exam ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-exam"> <i class="fas fa-signal"></i> Exam </button>
+                    </div>
+                </div>
+                <div class="transport ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-transport"> <i class="fas fa-bus"></i> Transport </button>
+                    </div>
+                </div>
+                <div class="hostel ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-hostel"> <i class="fas fa-hotel"></i> Hostel </button>
+                    </div>
+                </div>
+                <div class="notice ">
+                    <div class="btn-class">
+                        <button class="btn btn-same btn-notice"> <i class="fas fa-flag"></i> Notice </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+           <div class="top">
+               <div class="full-name">
+                   <h1 class="mt-3"><strong>Mind Light English Boarding School</strong></h1>
+               </div>
+               <div class="others">
+                   <div class="other-name mt-3">
+                       <h5>Abinash Adhikari</h5>
+                       <p class="text-center">Admin</p>
+                   </div>
+                   <div class="other-image mt-3">
+                       <img src="../images/father-avatar-character-icon-vector-13939287.jpg" alt="">
+                   </div>
+                   <div class="other-message mt-3">
+                        <i class="far fa-envelope"><sup class="text-danger">10</sup></i>                       
+                   </div>
+                   <div class="other-notification mt-3">
+                        <i class="far fa-bell"><sup class="text-danger">12</sup></i>
+                   </div>
+               </div>
+           </div>
+           <div class="body-dashboard">
+                <div class="path m-4">
+                    <h3 class="m-4"><strong>Admin Dashboard</strong></h3>
+                    <div class="middle">
+                        <div class="abc m-teacher bg-white px-4">
+                            <div class="abc-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="abc-text text-center m-auto mx-2">
+                                <h4>Teachers</h6>
+                                <p>256</p>
+                            </div>
+                        </div>
+                        <div class="abc m-students bg-white px-4">
+                            <div class="abc-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="abc-text text-center m-auto mx-2">
+                                <h4>Students</h6>
+                                <p>23,256</p>
+                            </div>
+                        </div>
+                        <div class="abc m-parents bg-white px-4">
+                            <div class="abc-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="abc-text text-center m-auto mx-2">
+                                <h4>Parents</h6>
+                                <p>23,256</p>
+                            </div>
+                        </div>
+                        <div class="abc m-earnings bg-white px-4">
+                            <div class="abc-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="abc-text text-center m-auto mx-2">
+                                <h4>Earning</h6>
+                                <p>RS 5,23,256</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+           </div>
+           <div class="body-student">
+                <div class="student-admission">
+                    <div class="path m-3">
+                        <h3 class="m-4"><strong>Student Admission Form</strong></h3>
+                        <div class="form bg-white p-3 m-3">
+                            <h5 class="m-3 mb-4 text-success"><u>Add New Student</u></h5>
+                            <form action="">
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <label for="fName">Full Name *</label>
+                                        <input type="text" id="fName" class="form-control bg-all" required>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="fatherName"> Father Name *</label>
+                                        <input type="text" id="fatherName" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="motherName"> Mother Name *</label>
+                                        <input type="text" id="motherName" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="dob">Date of Birth (AD) *</label>
+                                        <input type="date" id="dob" class="form-control bg-all" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row m-2">
+                                    <div class="col-2">
+                                        <label for="rolNumber">Roll Number *</label>
+                                        <input type="number" id="rollNumber" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="email"> Email </label>
+                                        <input type="text" id="email" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="religion">Religion *</label>
+                                        <select name="religion" id="religion" class="form-control bg-all" required>
+                                            <option value="Hindu">Hindu</option>
+                                            <option value="Buddhist">Buddhist</option>
+                                            <option value="Christain">Christain</option>
+                                            <option value="Christain">Muslim</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="bloodGroup">Blood Group</label>
+                                        <select name="bloodGroup" id="bloodGroup" class="form-control bg-all">
+                                            <option value="A+">A +ve</option>
+                                            <option value="A-">A -ve</option>
+                                            <option value="B+">B +ve</option>
+                                            <option value="B-">B -ve</option>
+                                            <option value="AB+">AB +ve</option>
+                                            <option value="AB-">AB -ve</option>
+                                            <option value="O+">O +ve</option>
+                                            <option value="O-">O -ve</option> 
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="gender">Gender *</label>
+                                        <select name="gender" id="gender" class="form-control bg-all" required>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row m-2">
+                                    <div class="col-2">
+                                        <label for="class"> Class *</label>
+                                        <input type="text" id="class" class="form-control bg-all" required>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="section">Section</label>
+                                        <input type="text" id="section" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="house">House</label>
+                                        <select name="gender" id="house" class="form-control bg-all" >
+                                            <option value="Red">Red</option>
+                                            <option value="Yellow">Yellow</option>
+                                            <option value="Green">Green</option>
+                                            <option value="Blue">Blue</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="admissionId">Admission Id *</label>
+                                        <input type="text" id="admissionId" class="form-control bg-all" required>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="phone">Contact Number </label>
+                                        <input type="number" id="phone" class="form-control bg-all">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row m-2">
+                                    <div class="col-3">
+                                        <label for="address">Address </label>
+                                        <input type="text" id="address" class="form-control bg-all">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="fOccupation">Father Occupation </label>
+                                        <input type="text" id="fOccupation" class="form-control bg-all">
+                                    </div>  
+                                    <div class="col-3">
+                                        <label for="mOccupation">Mother Occupation </label>
+                                        <input type="text" id="mOccupation" class="form-control bg-all">
+                                    </div>  
+                                    <div class="col-3">
+                                        <label for="lGuardian">Local Guardain </label>
+                                        <input type="text" id="lGuardian" class="form-control bg-all">
+                                    </div>  
+                                </div>
+                                <br>
+                                <div class="row m-2">
+                                    <div class="col-4">
+                                        <label for="description">Student short BIO</label>
+                                        <textarea name="" id="description" rows="9" class="bg-all form-control"></textarea>
+                                    </div>
+                                    <div class="col-4">
+                                         <div class="input-image">
+                                             <h5><u>Student Photo</u></h5>
+                                             <input type="file">
+                                         </div>
+                                         <div class="show-img border">
+
+                                         </div> 
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-image">
+                                            <h5><u>Birth Registration Certificate</u></h5>
+                                            <input type="file">
+                                        </div>
+                                        <div class="show-img border">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="col-5  m-auto ">
+                                    <div class=" col-6 submit-button m-3">
+                                        <button class="btn bg-danger text-white btn-submit form-control" value="submit"> Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-details">
+                    <div class="path m-3">
+                        <h3 class="m-4"><strong>Student Details</strong></h3>
+                        <div class="showDetail bg-white m-3 p-3">
+                            <h5 class="m-3 mb-4 text-success"><u> Search Student </u></h5>
+                            <form action="">
+                                <div class="search-student row m-3 p-3">
+                                    <div class="student-id col-6 d-flex">
+                                        <label for="studentId" class="form-control borderless">Student Id *</label>
+                                        <input type="text" class="form-control bg-all" id="studentId" required>
+                                    </div>
+                                    <div class="col-3 m-auto">
+                                        <button class="btn btn-studentSearch bg-warning m-auto form-control">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h5 class="m-3 mb-4 text-success"><u> About Student </u></h5>
+                            <div class="row">
+                                <div class="col-5 student-photo mx-2">
+                                    <img src="../images/father-avatar-character-icon-vector-13939287.jpg" alt="">
+                                </div>
+                                <div class="col-6 details-body mx-2">
+                                    <div class="name-top row">
+                                        <div class="Full-name col-md-8">
+                                            <h1>Abinash Adhikari</h1>
+                                        </div>
+                                        <div class="db-icons col-4">
+                                            <button class="btn btn-editIcon"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-printIcon"><i class="fas fa-print"></i></button>
+                                            <button class="btn btn-downloadIcon"><i class="fas fa-download"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="info-table table-responsive">
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Student Id :</td>
+                                                    <td>002</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Name :</td>
+                                                    <td>Abinash Adhikari</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Class : </td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Section : </td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Roll Number : </td>
+                                                    <td>7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>House : </td>
+                                                    <td>Red</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Blood Group : </td>
+                                                    <td>O +ve</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Address : </td>
+                                                    <td>Nijgadh-2(singaul), Bara</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Phone : </td>
+                                                    <td>9865079720</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Gender : </td>
+                                                    <td>Male</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Father Name : </td>
+                                                    <td>Sanubabu Adhikari</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mother Name: </td>
+                                                    <td>Bimala Adhikari</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Date of Birth: </td>
+                                                    <td>2056/06/21</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Religion : </td>
+                                                    <td>Hindu</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Father Occupation :</td>
+                                                    <td>Teacher</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mother Occupation :</td>
+                                                    <td>House Wife</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Local Gurdain :</td>
+                                                    <td>Sanubabu Adhikari</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>E-mail  : </td>
+                                                    <td>abinashadhikari48@gmail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Admission Date : </td>
+                                                    <td>2060/01/05</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-promotion">
+                    <div class="path m-3">
+                        <h3 class="m-4"><strong>Student Promotion</strong></h3>
+                        <div class="form bg-white p-3 m-3">
+                            <h5 class="m-3 mb-4 text-success"><u>Upgrade Class</u></h5>
+                            <form action="">
+                                <div class="row mb-5">
+                                    <div class="student-id col-3">
+                                        <label for="studentId">Student Id *</label>
+                                        <input type="text" class="form-control bg-all" id="studentId" required>
+                                    </div>
+                                    <div class="from-class col-3">
+                                        <label for="fromClass">Promote from class *</label>
+                                        <select name="" id="fromClass" class="form-control bg-all">
+                                            <option value="Nurssery">Nurssery</option>
+                                            <option value="L.K.G">L.K.G</option>
+                                            <option value="U.K.G">U.K.G</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="to-class col-3">
+                                        <label for="toClass">Promote to class *</label>
+                                        <select name="" id="toClass" class="form-control bg-all">
+                                            <option value="Nurssery">Nurssery</option>
+                                            <option value="L.K.G">L.K.G</option>
+                                            <option value="U.K.G">U.K.G</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="submit col-3 m-auto">
+                                        <button class="btn btn-update bg-danger m-auto form-control text-white" type="submit" >Update Class</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+                        <div class="form bg-white p-3 m-3">
+                            <h5 class="m-3 mb-4 text-success"><u>Upgrade Section</u></h5>
+                            <form action="">
+                                <div class="row mb-5">
+                                    <div class="student-id col-2">
+                                        <label for="studentId">Student Id *</label>
+                                        <input type="text" class="form-control bg-all" id="studentId" required>
+                                    </div>
+                                    <div class="from-class col-2">
+                                        <label for="fromClass">Class *</label>
+                                        <select name="" id="fromClass" class="form-control bg-all">
+                                            <option value="Nurssery">Nurssery</option>
+                                            <option value="L.K.G">L.K.G</option>
+                                            <option value="U.K.G">U.K.G</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="from-section col-2">
+                                        <label for="fromSection">From Section *</label>
+                                        <select name="" id="fromClass" class="form-control bg-all">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </div>
+                                    <div class="to-section col-2">
+                                        <label for="toSection">To Section *</label>
+                                        <select name="" id="toSection" class="form-control bg-all">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="submit col-3 m-auto">
+                                        <button class="btn btn-update bg-danger m-auto form-control text-white" type="submit" >Update Section</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+
+        
+    </script>
+</body>
+</html>

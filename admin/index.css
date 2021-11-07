@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.all-content{
+    display: flex;
+}
+.left{
+    width: 20%;
+    flex: 1;
+    background-color: rgb(74, 182, 74);
+}
+.navbar1{
+    border: 2px solid;
+    margin: 3%;
+}
+.functions{
+    margin: 3%;
+}
+.bg-all{
+    background-color: rgb(226, 224, 224);
+}
+.bg-main{
+    background-color:rgb(74, 182, 74) ;
+}
+
+.title h1{
+    font-size: 3rem;
+}
+.btn-class{
+    background-color: rgb(177, 219, 174);
+    width: 95%;
+    border: 2px solid;
+    margin: 2% 1%;
+    border-radius: 10px;
+    border-color: white;
+}
+.btn-class1{
+    margin: 2%;
+}
+.btn-same{
+    background: none; 
+    border: none;  
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.btn-same1{ 
+    background-color: aquamarine; 
+    width: 80%;
+    border-color: white;
+    font-size: 1rem;
+    margin: 1%;
+    text-align: left;
+    margin-left: 1rem;
+}
+.right{
+    flex: 4;
+    background-color: rgb(231, 230, 230);
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(white, rgb(74, 182, 74));
+    height: 6rem;
+    
+}
+.others{
+    flex: 0.7;
+    display: flex;
+    justify-content: space-around; 
+}
+.other-image img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    margin:2%;
+}
+.other-message, .other-notification{
+    font-size: 2rem;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+}
+.abc{
+    display: flex;
+    justify-content: space-between;
+}.abc-icon{
+    font-size: 3.5rem;
+    margin-right: 2rem;
+}
+
+.show-img{
+    height: 11rem;
+    width: 15rem;
+    margin: 1%;
+}
+.student-photo img{
+    height: 25rem;
+    width: 100%;
+}
+.search-student{
+    
+}
+.borderless{
+    border: none
+    ;
+}
