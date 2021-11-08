@@ -76,33 +76,121 @@ $(document).ready(function(){
     });
 
     //body content
+
+    //student
     $(".student-admission").hide(); 
     $(".student-details").hide();
     $(".student-promotion").hide();
 
+    //teacher
+    $(".all-teacher").hide();
+    $(".add-teacher").hide();
+    $(".teacher-details").hide();
+
+    // Subject
+    $(".add-subject").hide();
+
+    // Subject
+    $(".show-class").hide();
+
     $(".t-admin").on("click", function(){
-        $(".body-dashboard").show();
         $(".student-admission").hide();
         $(".student-details").hide();
         $(".student-promotion").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".body-dashboard").show();
     });
     $(".btn-admission").on("click", function(){
-        $(".student-admission").show();
         $(".student-details").hide();
         $(".body-dashboard").hide();
         $(".student-promotion").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".student-admission").show();
     });
     $(".btn-studentDetail").on("click", function(){
-        $(".student-details").show();
         $(".student-admission").hide();
         $(".body-dashboard").hide();
         $(".student-promotion").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".student-details").show();
     });
     $(".btn-studentPromotion").on("click", function(){
         $(".student-promotion").show();
         $(".student-details").hide();
         $(".student-admission").hide();
         $(".body-dashboard").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".teacher-details").hide();
+    });
+    $(".btn-allTeacher").on("click", function(){
+        $(".student-promotion").hide();
+        $(".student-details").hide();
+        $(".student-admission").hide();
+        $(".body-dashboard").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".all-teacher").show();
+    });
+    $(".btn-addTeacher").on("click", function(){
+        $(".student-promotion").hide();
+        $(".student-details").hide();
+        $(".student-admission").hide();
+        $(".body-dashboard").hide();
+        $(".all-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".add-teacher").show();
+    });
+    $(".btn-teacherDetail").on("click", function(){
+        $(".student-promotion").hide();
+        $(".student-details").hide();
+        $(".student-admission").hide();
+        $(".body-dashboard").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".add-subject").hide();
+        $(".show-class").hide();
+        $(".teacher-details").show();
+    });
+    $(".btn-subject").on("click", function(){
+        $(".student-promotion").hide();
+        $(".student-details").hide();
+        $(".student-admission").hide();
+        $(".body-dashboard").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".show-class").hide();
+        $(".add-subject").show();
+    });
+    $(".btn-classes").on("click", function(){
+        $(".student-promotion").hide();
+        $(".student-details").hide();
+        $(".student-admission").hide();
+        $(".body-dashboard").hide();
+        $(".all-teacher").hide();
+        $(".add-teacher").hide();
+        $(".teacher-details").hide();
+        $(".add-subject").hide();
+        $(".show-class").show();
     });
 
 
